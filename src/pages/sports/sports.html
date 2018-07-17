@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Level 4 Sports</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="port">
+    <ion-list>
+        <ion-item>
+            <ion-label>How many minutes is a rugby match?</ion-label>
+            <ion-select [(ngModel)]="Question1">
+              <ion-option value="50">50 Minutes</ion-option>
+              <ion-option value="30">30 Minutes</ion-option>
+              <ion-option value="90">90 Minutes</ion-option>
+              <ion-option value="80">80 Minutes</ion-option>
+              <ion-option value="25">25 Minutes</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>How long is an Olympic swimming pool?</ion-label>
+              <ion-select [(ngModel)]="Question2">
+                <ion-option value="50">Fifty meters</ion-option>
+                <ion-option value="10">Ten meters</ion-option>
+                <ion-option value="20">Twenty meters</ion-option>
+                <ion-option value="30">Thirty meters</ion-option>
+                <ion-option value="4">Four meters</ion-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Which ball is worth the most points in English snooker?</ion-label>
+                <ion-select [(ngModel)]="Question3">
+                  <ion-option value="gen">Green Ball</ion-option>
+                  <ion-option value="ora">Orange Ball</ion-option>
+                  <ion-option value="black">Black Ball</ion-option>
+                  <ion-option value="red">Red Ball</ion-option>
+                  <ion-option value="bro">Brown Ball</ion-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                  <ion-label>In which sport can you win the Davis Cup?</ion-label>
+                  <ion-select [(ngModel)]="Question4">
+                    <ion-option value="net">Netball</ion-option>
+                    <ion-option value="soc">Soccer</ion-option>
+                    <ion-option value="rug">Rugby</ion-option>
+                    <ion-option value="ten">Tennis</ion-option>
+                    <ion-option value="gol">Golf</ion-option>
+                  </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label>What is a golf ball made of?</ion-label>
+                    <ion-select [(ngModel)]="Question5">
+                      <ion-option value="pap">Paper</ion-option>
+                      <ion-option value="ela">Elastic</ion-option>
+                      <ion-option value="rub">Rubber</ion-option>
+                      <ion-option value="pla">Plastic</ion-option>
+                      <ion-option value="wod">Wood</ion-option>
+                    </ion-select>
+                  </ion-item>
+      </ion-list>
+      <button ion-button class="t" outline (click)="Start()">Asnwer</button>
+</ion-content>

@@ -1,0 +1,61 @@
+<ion-header>
+  <br>
+    <ion-title class="light"> Level 1 General</ion-title>
+  
+</ion-header>
+<br><br>
+<ion-content padding class="first">
+<ion-list class="g1">
+  <ion-item>
+      <ion-label>What is the most spoken language in the world?</ion-label>
+      <ion-select [(ngModel)]="Question1">
+        <ion-option value="eng">English</ion-option>
+        <ion-option value="chi">Chinese language</ion-option>
+        <ion-option value="zul">Zulu</ion-option>
+        <ion-option value="afr">Afrikaans</ion-option>
+        <ion-option value="xho">Xhosa</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label>Which currency is at home on the Johannesburg Stock Exchange?</ion-label>
+        <ion-select [(ngModel)]="Question2">
+          <ion-option value="gen">Gauteng</ion-option>
+          <ion-option value="pta">Pretoria</ion-option>
+          <ion-option value="sar">South African rand</ion-option>
+          <ion-option value="les">Lesotho</ion-option>
+          <ion-option value="bot">Botswana</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label>What does the abbreviation GPS mean?</ion-label>
+          <ion-select [(ngModel)]="Question3">
+            <ion-option value="gen">Geographical Positioning System</ion-option>
+            <ion-option value="gpm">Gauteng Police System</ion-option>
+            <ion-option value="gpe">Gauteng Provence State</ion-option>
+            <ion-option value="gps">Global Positioning System</ion-option>
+            <ion-option value="gps">Goals Positive Success</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>What does the abbreviation SMS mean?</ion-label>
+            <ion-select [(ngModel)]="Question4">
+              <ion-option value="smg">Smile Means Something </ion-option>
+              <ion-option value="sms">Short Message Service</ion-option>
+              <ion-option value="sa">Simply Make Someone Smile</ion-option>
+              <ion-option value="les">Short Map Service </ion-option>
+              <ion-option value="les">Short Message Simple </ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>Which is the nearest star to planet earth?</ion-label>
+              <ion-select [(ngModel)]="Question5">
+                <ion-option value="mer">Mercury</ion-option>
+                <ion-option value="jup">Jupiter</ion-option>
+                <ion-option value="sun">Sun </ion-option>
+                <ion-option value="ven">Venus</ion-option>
+                <ion-option value="sat">Saturn</ion-option>
+              </ion-select>
+            </ion-item>
+</ion-list>
+<button ion-button full class="t" (click)="Start()">Asnwer</button>
+</ion-content>

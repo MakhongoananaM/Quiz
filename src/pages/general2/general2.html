@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Level 2 General part 2</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="back2">
+    <ion-list>
+        <ion-item>
+            <ion-label>What is the largest number of five digits?</ion-label>
+            <ion-select [(ngModel)]="Question1">
+              <ion-option value="999">99999</ion-option>
+              <ion-option value="111">11111</ion-option>
+              <ion-option value="555">55555</ion-option>
+              <ion-option value="777">77777</ion-option>
+              <ion-option value="777">22222</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>In what year did Nelson Rolihlahla Mandela die?</ion-label>
+              <ion-select [(ngModel)]="Question2">
+                <ion-option value="210">2010</ion-option>
+                <ion-option value="218">2018</ion-option>
+                <ion-option value="217">2017</ion-option>
+                <ion-option value="200">2000</ion-option>
+                <ion-option value="213">2013</ion-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>what colour is SA 200 note?</ion-label>
+                <ion-select [(ngModel)]="Question3">
+                  <ion-option value="gen">Green</ion-option>
+                  <ion-option value="ora">Orange</ion-option>
+                  <ion-option value="blu">blue</ion-option>
+                  <ion-option value="pin">pink</ion-option>
+                  <ion-option value="bro">brown</ion-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                  <ion-label>In what year was Google launched on the web?</ion-label>
+                  <ion-select [(ngModel)]="Question4">
+                    <ion-option value="210">2010</ion-option>
+                    <ion-option value="217">2017</ion-option>
+                    <ion-option value="213">2013</ion-option>
+                    <ion-option value="1998">1998</ion-option>
+                    <ion-option value="198">1980</ion-option>
+                  </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label>In computing what is RAM short for?</ion-label>
+                    <ion-select [(ngModel)]="Question5">
+                      <ion-option value="rom">Read Only Memory</ion-option>
+                      <ion-option value="ram">Random Access Memory</ion-option>
+                      <ion-option value="ray">Random Asked Memory </ion-option>
+                      <ion-option value="rar">Random Access Marker</ion-option>
+                      <ion-option value="rar">Read Access Memeory</ion-option>
+                    </ion-select>
+                  </ion-item>
+      </ion-list>
+      <button ion-button class="t" (click)="Start()">Asnwer</button>
+</ion-content>

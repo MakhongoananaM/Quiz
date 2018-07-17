@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Level 5 Science</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="we">
+    <ion-list>
+        <ion-item>
+            <ion-label>Which device do we use to look at the stars?</ion-label>
+            <ion-select [(ngModel)]="Question1">
+              <ion-option value="sun">Sunglasses</ion-option>
+              <ion-option value="gog">Goggles</ion-option>
+              <ion-option value="tel">Telescope</ion-option>
+              <ion-option value="mic">Microscope</ion-option>
+              <ion-option value="bin">Binocular</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+              <ion-label>What are the three primary colors?</ion-label>
+              <ion-select [(ngModel)]="Question2">
+                <ion-option value="bbg">Black, Brown, Grey</ion-option>
+                <ion-option value="ogp">Orange, Green, Purple</ion-option>
+                <ion-option value="byr">Blue, yellow and red</ion-option>
+                <ion-option value="rby">Red-orang, Blue-violet, Yellow-green</ion-option>
+                <ion-option value="wpt">White, Pink, Turquoise</ion-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label>Who discoved one of the first antibiotics: penicillin?</ion-label>
+                <ion-select [(ngModel)]="Question3">
+                  <ion-option value="bai">Alexander Bain</ion-option>
+                  <ion-option value="gio">Giovanni Caselli</ion-option>
+                  <ion-option value="blu">Alexander Graham Bell</ion-option>
+                  <ion-option value="pin">Guglielmo Marconi</ion-option>
+                  <ion-option value="ale">Alexander Fleming</ion-option>
+                </ion-select>
+              </ion-item>
+              <ion-item>
+                  <ion-label>Which planet is nearest the sun?</ion-label>
+                  <ion-select [(ngModel)]="Question4">
+                    <ion-option value="mer">Mercury</ion-option>
+                    <ion-option value="ven">Venus</ion-option>
+                    <ion-option value="ear">Earth</ion-option>
+                    <ion-option value="mar">Mars</ion-option>
+                   
+                  </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label>How many lungs does the adult human body have?</ion-label>
+                    <ion-select [(ngModel)]="Question5">
+                      <ion-option value="one">One</ion-option>
+                      <ion-option value="two">Two</ion-option>
+                      <ion-option value="the">Three</ion-option>
+                      <ion-option value="four">Four</ion-option>
+                      <ion-option value="five">Five</ion-option>
+                    </ion-select>
+                  </ion-item>
+      </ion-list>
+      <button ion-button class="t" (click)="Start()">Asnwer</button>
+</ion-content>

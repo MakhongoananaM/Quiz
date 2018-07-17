@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> Level 3 Food</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backf">
+    <ion-list >
+        <ion-item class="word">
+            <ion-label>What is called a meal in open air area?</ion-label>
+            <ion-select [(ngModel)]="Question1">
+              
+              <ion-option value="pic">Picnic</ion-option>
+              <ion-option value="lun">Lunch</ion-option>
+              <ion-option value="din">Dinner</ion-option>
+              <ion-option value="bre">Breakfast</ion-option>
+              <ion-option value="sna">Snacks</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item class="word">
+              <ion-label>Which cheese is traditionally used for pizzas?</ion-label>
+              <ion-select [(ngModel)]="Question2">
+                <ion-option value="che">cheese</ion-option>
+                <ion-option value="moz">Mozzarella</ion-option>
+                <ion-option value="der">Cheddar</ion-option>
+                <ion-option value="feta">Feta</ion-option>
+                <ion-option value="blu">Bluecheese</ion-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="word">
+                <ion-label>What is a banana called in Afrikanns?</ion-label>
+                <ion-select [(ngModel)]="Question3">
+                  <ion-option value="app">Apple</ion-option>
+                  <ion-option value="org">Orange</ion-option>
+                  <ion-option value="pis">Pisang</ion-option>
+                  <ion-option value="ban">Banana</ion-option>
+                  <ion-option value="aar">Aartappel</ion-option>
+                </ion-select>
+              </ion-item>  
+              <ion-item class="word">
+                  <ion-label>What is the Hungarian word for pepper?</ion-label>
+                  <ion-select [(ngModel)]="Question4">
+                    <ion-option value="tre">Tree</ion-option>
+                    <ion-option value="gre">Green</ion-option>
+                    <ion-option value="pap">Paper</ion-option>
+                    <ion-option value="papr">Paprika</ion-option>
+                    <ion-option value="bla">Black Paper</ion-option>
+                  </ion-select>
+                </ion-item> 
+                <ion-item class="word">
+                    <ion-label>What is Japanese sake made from (Japanes Drink)?</ion-label>
+                    <ion-select [(ngModel)]="Question5">
+                      <ion-option value="sap">Samp</ion-option>
+                      <ion-option value="pap">Pap</ion-option>
+                      <ion-option value="ric">Rice</ion-option>
+                      <ion-option value="noo">Noodles</ion-option>
+                      <ion-option value="suc">Suchi</ion-option>
+                    </ion-select>
+                  </ion-item>
+      </ion-list>
+      <button ion-button class="t" (click)="Start()">Asnwer</button>
+    
+</ion-content>
